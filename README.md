@@ -31,40 +31,51 @@ export default {
 
 
 ##  Componente App.tsx: Pasar a otras listas
+Primero creamos otras listas para tener mas opciones.
 ```js
 const words3 = ['Table', 'Chair', 'Book', 'Pen', 'Computer', 'Lamp', 'Television'];
 
 const words4 = ['Dog', 'Cat', 'Elephant', 'Lion', 'Giraffe', 'Dolphin', 'Eagle'];
+
 function App(){
+/* 
+haciendo uso del usestate creamos un campo para convertir nuestro campos visibles o invisbles, y ocultar el que campo que no usemos */
     const [isVisible, setIsVisible] = useState(false); 
     const [isVisible2, setIsVisible2] = useState(false); 
     const [isVisible3, setIsVisible3] = useState(false); 
+
 return(
-    
-<div className='App' >
-<Welcome/>
 
 <div className="uno">
     {
+{/* imprimimos nuestro campo que contiene el juego del orcado y nuestra lista, solo que ahora tiene un campo que pregunta si es true se mostrara y si es false se oculta */}
         isVisible && <Hangman words={words} />
-    }
-</div>
-<div className="dos">
-    {
-        isVisible2 && <Hangman words={words3} />
-    }
-</div>
-<div className="tres">
-    {
-        isVisible3 && <Hangman words={words4} />
     }
 </div>
 <div className="olo">
     <button className ="custom-button" onClick={()=>{
+{/* 
+Al hacer click cambiamos el valor de ser false a true dependiendo que lista queremos */}
     setIsVisible(true),
     setIsVisible2(false),setIsVisible3(false)
     }
 
     }>food</button>
     
+```
+
+### componente Welcome.tsx: Modifica el componente para que dependiendo de la lista que se recibe muestre un “Hint” 
+```js
+
+  // Función para obtener una letra aleatoria al iniciar el juego
+useEffect(() => {
+    // Seleccionar una palabra aleatoria de la lista de palabras
+    const randomWord = words[Math.floor(Math.random() * words.length)];
+    // Establecer la palabra seleccionada
+    setselectedWord(randomWord);
+    // Seleccionar una letra aleatoria de la palabra y establecerla como adivinada al iniciar el juego
+    const randomLetter = randomWord[Math.floor(Math.random() * randomWord.length)];
+    setguessedLetters([randomLetter]);
+}, [words]);
+
 ```
