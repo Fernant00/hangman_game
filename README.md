@@ -28,3 +28,43 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+##  Componente App.tsx: Pasar a otras listas
+```js
+const words3 = ['Table', 'Chair', 'Book', 'Pen', 'Computer', 'Lamp', 'Television'];
+
+const words4 = ['Dog', 'Cat', 'Elephant', 'Lion', 'Giraffe', 'Dolphin', 'Eagle'];
+function App(){
+    const [isVisible, setIsVisible] = useState(false); 
+    const [isVisible2, setIsVisible2] = useState(false); 
+    const [isVisible3, setIsVisible3] = useState(false); 
+return(
+    
+<div className='App' >
+<Welcome/>
+
+<div className="uno">
+    {
+        isVisible && <Hangman words={words} />
+    }
+</div>
+<div className="dos">
+    {
+        isVisible2 && <Hangman words={words3} />
+    }
+</div>
+<div className="tres">
+    {
+        isVisible3 && <Hangman words={words4} />
+    }
+</div>
+<div className="olo">
+    <button className ="custom-button" onClick={()=>{
+    setIsVisible(true),
+    setIsVisible2(false),setIsVisible3(false)
+    }
+
+    }>food</button>
+    
+```
