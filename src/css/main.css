@@ -1,0 +1,120 @@
+body{
+    background: rgb(169, 251, 255)
+
+}
+
+.wrapper{
+  display: flex;
+    align-self: center;
+    align-content: center;
+    padding-left: 80%;
+    align-items: center;
+
+    color:rgb(176, 133, 81);
+}
+
+.olo{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    padding-left: 80%;
+    align-items: center;
+    
+}
+.uno{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    padding-left: 80%;
+    align-items: center;
+}
+.dos{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    padding-left: 80%;
+    align-items: center;
+}
+.tres{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    padding-left: 80%;
+    align-items: center;
+}
+.custom-button {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como elemento de bloque */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cursor al pasar por encima */
+    border-radius: 10px; /* Borde redondeado */
+    background-image: url('https://img.freepik.com/vector-premium/dibujar-frutas-dibujado-mano-frutas-color-manzana-naranja-limon-platano-kiwi-cereza-bayas-comida-natural-vegana-doodle-conjunto-vectores-ilustracion-dibujo-manzana-platano-pina-naranja_102902-3438.jpg?w=1480'); /* Ruta de la imagen */
+    background-size: 200px; /* Tamaño de la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center; /* Posición de la imagen */
+  }
+  
+  .custom-button:hover {
+    background-color: #45a049; /* Cambiar color de fondo al pasar el ratón */
+  }
+  
+  .custom-button:active {
+    background-color: #367c39; /* Cambiar color de fondo al hacer clic */
+  }
+  .custom-button2 {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como elemento de bloque */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cursor al pasar por encima */
+    border-radius: 10px; /* Borde redondeado */
+    background-image: url('https://th.bing.com/th/id/OIP.6zzgOOiHiEqMiDDKuWLyzgHaGh?rs=1&pid=ImgDetMain'); /* Ruta de la imagen */
+    background-size: 150px; /* Tamaño de la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center; /* Posición de la imagen */
+  }
+  
+  .custom-button2:hover {
+    background-color: #45a049; /* Cambiar color de fondo al pasar el ratón */
+  }
+  
+  .custom-button2:active {
+    background-color: #367c39; /* Cambiar color de fondo al hacer clic */
+  }
+  .custom-button3 {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como elemento de bloque */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cursor al pasar por encima */
+    border-radius: 10px; /* Borde redondeado */
+    background-image: url('https://i.pinimg.com/originals/5e/07/a9/5e07a9c8e057a66c81642af5ddab1a73.jpg'); /* Ruta de la imagen */
+    background-size: 200px; /* Tamaño de la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center; /* Posición de la imagen */
+  }
+  
+  .custom-button3:hover {
+    background-color: #45a049; /* Cambiar color de fondo al pasar el ratón */
+  }
+  
+  .custom-button3:active {
+    background-color: #367c39; /* Cambiar color de fondo al hacer clic */
+  }
+  
