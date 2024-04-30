@@ -1,5 +1,5 @@
 body{
-    background: rgb(169, 251, 255)
+    background: rgb(0, 85, 90)
 
 }
 
@@ -117,4 +117,4 @@ body{
   .custom-button3:active {
     background-color: #367c39; /* Cambiar color de fondo al hacer clic */
   }
-  
+  .app{}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Hangman from "./components/Hangman";
 import Welcome from './components/Welcome';
 
@@ -8,13 +8,30 @@ const words = ['apple','banana','cherry','date','fig','grape','kiwi'];
 const words3 = ['Table', 'Chair', 'Book', 'Pen', 'Computer', 'Lamp', 'Television'];
 
 const words4 = ['Dog', 'Cat', 'Elephant', 'Lion', 'Giraffe', 'Dolphin', 'Eagle'];
+
+
+
 function App(){
     const [isVisible, setIsVisible] = useState(false); 
     const [isVisible2, setIsVisible2] = useState(false); 
     const [isVisible3, setIsVisible3] = useState(false); 
+    const [count, setCount] = useState(0)
+
+    useEffect(()=>{
+    
+    
+    const key =  setInterval(() =>{
+      setCount(count => count + 1)
+    },1000);
+    return ()=>{
+      clearInterval(key);
+    };
+    
+    },[]);
 return(
     
 <div className='App' >
+    Tiempo transcurrido: {count} 
 <Welcome/>
 
 <div className="uno">
