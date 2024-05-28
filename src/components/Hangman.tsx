@@ -9,7 +9,7 @@ const Hangman = ({words}: HangmanProps)=>{
     const [guessedLetters,setguessedLetters] = useState<string[]>([]);
     const [errorCount,seterrorCount] = useState(0);
 
-    const displayWord = selectedWord.split('').map((letter,index) =>{
+    const displayWord = selectedWord.split('').map((letter) =>{
         console.log("selectedWord: ", selectedWord)
         if(guessedLetters.includes(letter)){
             console.log("guessedLetters: ", guessedLetters)
